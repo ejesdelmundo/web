@@ -1,0 +1,9 @@
+<style>
+    .pdfobject-container { border: 0px solid #ccc; }
+    body {
+        margin: 0;
+    }
+    </style>
+    <div id="my-pdf"></div>
+    <script src="https://unpkg.com/pdfobject"></script>
+    <script>PDFObject.embed(`./test.pdf?v=${new Date().toISOString()}`, document.body);</script>
